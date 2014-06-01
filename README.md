@@ -17,7 +17,7 @@ project/plugins.sbt - plugins used for creation of IDEA and Eclipse projects.
 How to build and Run
 --------------------
 
-1. Install [Java 7 JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+1. Install [Java 8 JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
 2. Install [SBT](http://www.scala-sbt.org/)
 
