@@ -6,11 +6,10 @@ Simple example of a ScalaFX application using [Simple-Build-Tool](http://www.sca
 Content
 -------
 
-src/main/scala/hello/ScalaFXHelloWorld.scala - sample ScalaFX application.
-
-build.sbt - the main SBT configuration file.
-project/build.properties - version of SBT to use.
-project/plugins.sbt - plugins used for creation of IDEA and Eclipse projects.
+* `src/main/scala/hello/ScalaFXHelloWorld.scala` - sample ScalaFX application.
+* `build.sbt` - the main SBT configuration file.
+* `project/build.properties` - version of SBT to use.
+* `project/plugins.sbt` - plugins used for creation of IDEA and Eclipse projects.
 
 
 
@@ -24,20 +23,27 @@ How to build and Run
 3. Run the example: change o directory containing this example and use SBT to
    build and run the example:
 
+   ```
     %> sbt run
+   ```
 
    It will download needed dependencies, including Scala and ScalaFX, and run 
    the example code. 
 
 
-Crete project for IDEA or Eclipse
---------------------------------- 
+Import into IDEA or NetBeans
+----------------------------
+
+Intellij IDEA and NetBeans with Scala plugins can directly import SBT projects. 
+
+
+Crete project for Eclipse
+-------------------------
 
 If you want to create project that can be used with IntelliJ IDEA, inside
 this project directory, at command prompt type:
 
     %> sbt gen-idea
-
 
 If you want to create project that can be used with Eclipse, inside
 this project directory, at command prompt type:
