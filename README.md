@@ -40,11 +40,6 @@ Intellij IDEA and NetBeans with Scala plugins can directly import SBT projects.
 Crete project for Eclipse
 -------------------------
 
-If you want to create project that can be used with IntelliJ IDEA, inside
-this project directory, at command prompt type:
-
-    %> sbt gen-idea
-
 If you want to create project that can be used with Eclipse, inside
 this project directory, at command prompt type:
 
