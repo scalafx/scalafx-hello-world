@@ -16,7 +16,7 @@ Content
 How to build and Run
 --------------------
 
-1. Install [Java 8 JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+1. Install [Java 8 JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) update u40 or newer.
 
 2. Install [SBT](http://www.scala-sbt.org/)
 
