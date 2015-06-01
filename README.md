@@ -16,11 +16,11 @@ Content
 How to build and Run
 --------------------
 
-1. Install [Java 8 JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) update u40 or newer.
+1. Install [Java 8 JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) update 40 or newer.
 
 2. Install [SBT](http://www.scala-sbt.org/)
 
-3. Run the example: change o directory containing this example and use SBT to
+3. Run the example: change to directory containing this example and use SBT to
    build and run the example:
 
    ```
@@ -34,10 +34,10 @@ How to build and Run
 Import into IDEA or NetBeans
 ----------------------------
 
-Intellij IDEA and NetBeans with Scala plugins can directly import SBT projects. 
+IntelliJ IDEA and NetBeans with Scala plugins can directly import SBT projects. 
 
 
-Crete project for Eclipse
+Create project for Eclipse
 -------------------------
 
 If you want to create project that can be used with Eclipse, inside
