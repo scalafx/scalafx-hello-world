@@ -2,13 +2,13 @@
 name := "ScalaFX Hello World"
 
 // Project version
-version := "8.0.40-R8"
+version := "8.0.60-R9"
 
 // Version of Scala used by the project
-scalaVersion := "2.11.6"
+scalaVersion := "2.11.7"
 
 // Add dependency on ScalaFX library
-libraryDependencies += "org.scalafx" %% "scalafx" % "8.0.40-R8"
+libraryDependencies += "org.scalafx" %% "scalafx" % "8.0.60-R9"
 
 // Fork a new JVM for 'run' and 'test:run', to avoid JavaFX double initialization problems
 fork := true

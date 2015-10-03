@@ -34,40 +34,43 @@ import scalafx.scene.Scene
 import scalafx.scene.effect.DropShadow
 import scalafx.scene.layout.HBox
 import scalafx.scene.paint.Color._
-import scalafx.scene.paint.{LinearGradient, Stops}
+import scalafx.scene.paint._
 import scalafx.scene.text.Text
+import scalafx.stage.StageStyle
 
 object ScalaFXHelloWorld extends JFXApp {
 
   stage = new PrimaryStage {
+    initStyle(StageStyle.UNIFIED)
     title = "ScalaFX Hello World"
     scene = new Scene {
-      fill = Black
+      fill = Color.rgb(38, 38, 38)
       content = new HBox {
-        padding = Insets(20)
+        padding = Insets(50, 80, 50, 80)
         children = Seq(
           new Text {
-            text = "Hello "
-            style = "-fx-font-size: 100pt"
+            text = "Scala"
+            style = "-fx-font: normal bold 100pt sans-serif"
             fill = new LinearGradient(
               endX = 0,
-              stops = Stops(PaleGreen, SeaGreen))
+              stops = Stops(Color.Red, Color.DarkRed))
           },
           new Text {
-            text = "World!!!"
-            style = "-fx-font-size: 100pt"
+            text = "FX"
+            style = "-fx-font: italic bold 100pt sans-serif"
             fill = new LinearGradient(
               endX = 0,
-              stops = Stops(Cyan, DodgerBlue)
+              stops = Stops(White, DarkGray)
             )
             effect = new DropShadow {
-              color = DodgerBlue
-              radius = 25
+              color = DarkGray
+              radius = 15
               spread = 0.25
             }
           }
         )
       }
     }
+
   }
 }
