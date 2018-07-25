@@ -1,0 +1,27 @@
+3
+jared industries
+jared
+555-555-5555
+jared@jared.com
+applied
+tech
+Great Company!
+--end notes--
+Guy Electronics
+William
+777-777-7777
+will@theguy.com
+follow up needed
+tech
+What a good guy!
+I love this guy!
+He's just a guy!
+--end notes--
+Sheesh Burger
+Mia
+888-888-8888
+theMonster@shoe.com
+denied
+recruiter
+Such an attitude!
+--end notes--
