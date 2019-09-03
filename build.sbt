@@ -2,13 +2,13 @@
 name := "ScalaFX Hello World"
 
 // Project version
-version := "11-R16"
+version := "12.0.1-R17"
 
 // Version of Scala used by the project
-scalaVersion := "2.12.7"
+scalaVersion := "2.12.9"
 
 // Add dependency on ScalaFX library
-libraryDependencies += "org.scalafx" %% "scalafx" % "11-R16"
+libraryDependencies += "org.scalafx" %% "scalafx" % "12.0.1-R17"
 resolvers += Resolver.sonatypeRepo("snapshots")
 
 scalacOptions ++= Seq("-unchecked", "-deprecation", "-Xcheckinit", "-encoding", "utf8", "-feature")
@@ -27,5 +27,5 @@ lazy val osName = System.getProperty("os.name") match {
 // Add JavaFX dependencies
 lazy val javaFXModules = Seq("base", "controls", "fxml", "graphics", "media", "swing", "web")
 libraryDependencies ++= javaFXModules.map( m=>
-  "org.openjfx" % s"javafx-$m" % "11" classifier osName
+  "org.openjfx" % s"javafx-$m" % "12.0.1" classifier osName
 )
