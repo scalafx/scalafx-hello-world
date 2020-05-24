@@ -3,11 +3,14 @@ scalafx-hello-world
 
 Simple example of a ScalaFX application using [Simple-Build-Tool](http://www.scala-sbt.org/) (SBT).
 
+This version shows early use with Scala 3 (a.k.a dotty).
+
 
 Content
 -------
 
 * `src/main/scala/hello/ScalaFXHelloWorld.scala` - sample ScalaFX application.
+* `src/main/scala/hello/Launcher.scala` - main entry point. Launches `ScalaFXHelloWorld`. It is a workaround to avoid some JavaFX module issues. 
 * `build.sbt` - the main SBT configuration file.
 * `project/build.properties` - version of SBT to use.
 * `project/plugins.sbt` - plugins used for creation of IDEA and Eclipse projects.

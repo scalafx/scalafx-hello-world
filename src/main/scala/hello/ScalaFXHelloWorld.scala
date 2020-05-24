@@ -1,7 +1,7 @@
 package hello
 
-import scalafx.application.JFXApp
-import scalafx.application.JFXApp.PrimaryStage
+import javafx.{application => jfxa, stage => jfxs}
+import scalafx.Includes._
 import scalafx.geometry.Insets
 import scalafx.scene.Scene
 import scalafx.scene.effect.DropShadow
@@ -9,13 +9,15 @@ import scalafx.scene.layout.HBox
 import scalafx.scene.paint.Color._
 import scalafx.scene.paint._
 import scalafx.scene.text.Text
+import scalafx.stage.Stage
 
-object ScalaFXHelloWorld extends JFXApp {
+import scala.language.implicitConversions
 
-  stage = new PrimaryStage {
-    //    initStyle(StageStyle.Unified)
-    title = "ScalaFX Hello World"
-    scene = new Scene {
+class ScalaFXHelloWorld extends jfxa.Application {
+  def start(jfxPrimaryStage: jfxs.Stage): Unit = {
+    val primaryStage: Stage = jfxPrimaryStage
+    primaryStage.title = "ScalaFX Hello World"
+    primaryStage.scene = new Scene {
       fill = Color.rgb(38, 38, 38)
       content = new HBox {
         padding = Insets(50, 80, 50, 80)
@@ -43,6 +45,6 @@ object ScalaFXHelloWorld extends JFXApp {
         )
       }
     }
-
+    primaryStage.show()
   }
 }
