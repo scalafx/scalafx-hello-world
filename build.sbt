@@ -2,18 +2,18 @@
 name := "ScalaFX Hello World"
 
 // Project version
-version := "14-R19"
+version := "15.0.1-R20"
 
 // Version of Scala used by the project
 val dottyVersion = "0.24.0-RC1"
-val scala213Version = "2.13.1"
+val scala213Version = "2.13.4"
 scalaVersion := dottyVersion
 
 // To cross compile with Dotty and Scala 2
 crossScalaVersions := Seq(dottyVersion, scala213Version)
 
 // Add dependency on ScalaFX library
-libraryDependencies += "org.scalafx" % "scalafx_2.13" % "14-R19"
+libraryDependencies += "org.scalafx" %% "scalafx" % "15.0.1-R20"
 resolvers += Resolver.sonatypeRepo("snapshots")
 
 scalacOptions ++= Seq("-unchecked", "-deprecation", "-encoding", "utf8", "-feature")
@@ -34,5 +34,5 @@ lazy val osName = System.getProperty("os.name") match {
 // Add JavaFX dependencies
 lazy val javaFXModules = Seq("base", "controls", "fxml", "graphics", "media", "swing", "web")
 libraryDependencies ++= javaFXModules.map( m=>
-  "org.openjfx" % s"javafx-$m" % "14.0.1" classifier osName
+  "org.openjfx" % s"javafx-$m" % "15.0.1" classifier osName
 )
