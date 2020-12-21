@@ -5,7 +5,7 @@ name := "ScalaFX Hello World"
 version := "15.0.1-R20"
 
 // Version of Scala used by the project
-val dottyVersion = "0.24.0-RC1"
+val dottyVersion = "3.0.0-M3"
 val scala213Version = "2.13.4"
 scalaVersion := dottyVersion
 
@@ -13,7 +13,7 @@ scalaVersion := dottyVersion
 crossScalaVersions := Seq(dottyVersion, scala213Version)
 
 // Add dependency on ScalaFX library
-libraryDependencies += "org.scalafx" %% "scalafx" % "15.0.1-R20"
+libraryDependencies += "org.scalafx" % "scalafx_2.13" % "15.0.1-R20"
 resolvers += Resolver.sonatypeRepo("snapshots")
 
 scalacOptions ++= Seq("-unchecked", "-deprecation", "-encoding", "utf8", "-feature")
