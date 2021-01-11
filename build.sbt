@@ -2,18 +2,18 @@
 name := "ScalaFX Hello World"
 
 // Project version
-version := "15.0.1-R20"
+version := "15.0.1-R21"
 
 // Version of Scala used by the project
 val dottyVersion = "3.0.0-M3"
 val scala213Version = "2.13.4"
 scalaVersion := dottyVersion
 
-// To cross compile with Dotty and Scala 2
+// To cross compile with Scala 3 and Scala 2
 crossScalaVersions := Seq(dottyVersion, scala213Version)
 
 // Add dependency on ScalaFX library
-libraryDependencies += "org.scalafx" % "scalafx_2.13" % "15.0.1-R20"
+libraryDependencies += ("org.scalafx" %% "scalafx" % "15.0.1-R21").withDottyCompat(scalaVersion.value)
 resolvers += Resolver.sonatypeRepo("snapshots")
 
 scalacOptions ++= Seq("-unchecked", "-deprecation", "-encoding", "utf8", "-feature")
