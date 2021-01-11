@@ -2,13 +2,13 @@
 name := "ScalaFX Hello World"
 
 // Project version
-version := "15.0.1-R20"
+version := "15.0.1-R21"
 
 // Version of Scala used by the project
 scalaVersion := "2.13.4"
 
 // Add dependency on ScalaFX library
-libraryDependencies += "org.scalafx" %% "scalafx" % "15.0.1-R20"
+libraryDependencies += "org.scalafx" %% "scalafx" % "15.0.1-R21"
 resolvers += Resolver.sonatypeRepo("snapshots")
 
 scalacOptions ++= Seq("-unchecked", "-deprecation", "-Xcheckinit", "-encoding", "utf8", "-feature")
