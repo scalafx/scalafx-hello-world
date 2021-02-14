@@ -18,7 +18,7 @@ resolvers += Resolver.sonatypeRepo("snapshots")
 
 scalacOptions ++= Seq("-unchecked", "-deprecation", "-encoding", "utf8", "-feature")
 
-mainClass := Some("hello.Launcher")
+mainClass := Some("hello.ScalaFXHelloWorld")
 
 // Fork a new JVM for 'run' and 'test:run', to avoid JavaFX double initialization problems
 fork := true
