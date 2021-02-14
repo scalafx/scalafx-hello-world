@@ -48,9 +48,15 @@ this project directory, at command prompt type:
 
     %> sbt eclipse
 
-
 Additional Information
 ----------------------
 
 Detailed description of similar example can be found in the blog post
-["Getting Started with ScalaFX: Compile and Run"](http://codingonthestaircase.wordpress.com/2013/05/17/getting-started-with-scalafx-compile-and-run-2/).
+["Getting Started with ScalaFX: Compile and Run"](http://codingonthestaircase.wordpress.com/2013/05/17/getting-started-with-scalafx-compile-and-run-2/)
+.
+
+
+Scala 3 Support
+---------------
+
+Version supporting Scala 3 is on branch [Scala3](https://github.com/scalafx/scalafx-hello-world/tree/Scala3). 
