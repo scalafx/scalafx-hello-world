@@ -13,7 +13,7 @@ scalaVersion := dottyVersion
 crossScalaVersions := Seq(dottyVersion, scala213Version)
 
 // Add dependency on ScalaFX library
-libraryDependencies += ("org.scalafx" %% "scalafx" % "15.0.1-R21").withDottyCompat(scalaVersion.value)
+libraryDependencies += ("org.scalafx" %% "scalafx" % "15.0.1-R21").cross(CrossVersion.for3Use2_13)
 resolvers += Resolver.sonatypeRepo("snapshots")
 
 scalacOptions ++= Seq("-unchecked", "-deprecation", "-encoding", "utf8", "-feature")
