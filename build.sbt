@@ -2,19 +2,20 @@
 name := "ScalaFX Hello World"
 
 // Project version
-version := "15.0.1-R21"
+version := "15.0.1-R22-SNAPSHOT"
 
 // Version of Scala used by the project
-val dottyVersion = "3.0.0-M3"
-val scala213Version = "2.13.4"
-scalaVersion := dottyVersion
+val scala2Version = "2.13.5"
+val scala3Version = "3.0.0-RC2"
+scalaVersion := scala3Version
 
 // To cross compile with Scala 3 and Scala 2
-crossScalaVersions := Seq(dottyVersion, scala213Version)
+crossScalaVersions := Seq(scala3Version, scala2Version)
 
 // Add dependency on ScalaFX library
-libraryDependencies += ("org.scalafx" %% "scalafx" % "15.0.1-R21").cross(CrossVersion.for3Use2_13)
+libraryDependencies += "org.scalafx" %% "scalafx" % "15.0.1-R22-SNAPSHOT"
 resolvers += Resolver.sonatypeRepo("snapshots")
+resolvers += Resolver.mavenLocal
 
 scalacOptions ++= Seq("-unchecked", "-deprecation", "-encoding", "utf8", "-feature")
 
