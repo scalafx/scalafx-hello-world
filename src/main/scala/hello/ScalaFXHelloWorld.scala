@@ -1,7 +1,6 @@
 package hello
 
 import scalafx.application.JFXApp3
-import scalafx.application.JFXApp3.PrimaryStage
 import scalafx.geometry.Insets
 import scalafx.scene.Scene
 import scalafx.scene.effect.DropShadow
@@ -16,7 +15,7 @@ object ScalaFXHelloWorld extends JFXApp3 :
 
   override def start(): Unit =
 
-    stage = new PrimaryStage :
+    stage = new JFXApp3.PrimaryStage :
       //    initStyle(StageStyle.Unified)
       title = "ScalaFX Hello World"
       scene = new Scene :
