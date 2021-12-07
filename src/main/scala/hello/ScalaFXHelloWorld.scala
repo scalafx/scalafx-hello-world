@@ -5,8 +5,8 @@ import scalafx.geometry.Insets
 import scalafx.scene.Scene
 import scalafx.scene.effect.DropShadow
 import scalafx.scene.layout.HBox
-import scalafx.scene.paint.Color._
-import scalafx.scene.paint._
+import scalafx.scene.paint.*
+import scalafx.scene.paint.Color.*
 import scalafx.scene.text.Text
 
 import scala.language.implicitConversions
@@ -36,4 +36,4 @@ object ScalaFXHelloWorld extends JFXApp3 :
                 color = DarkGray
                 radius = 15
                 spread = 0.25
-            )
+          )
