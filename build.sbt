@@ -2,13 +2,13 @@
 name := "ScalaFX Hello World"
 
 // Project version
-version := "16.0.0-R25"
+version := "17.0.1-R26"
 
 // Version of Scala used by the project
-scalaVersion := "2.13.6"
+scalaVersion := "2.13.7"
 
 // Add dependency on ScalaFX library
-libraryDependencies += "org.scalafx" %% "scalafx" % "16.0.0-R25"
+libraryDependencies += "org.scalafx" %% "scalafx" % "17.0.1-R26"
 
 scalacOptions ++= Seq("-unchecked", "-deprecation", "-encoding", "utf8", "-feature")
 
@@ -27,5 +27,5 @@ libraryDependencies ++= {
     case _ => throw new Exception("Unknown platform!")
   }
   Seq("base", "controls", "fxml", "graphics", "media", "swing", "web")
-    .map(m => "org.openjfx" % s"javafx-$m" % "16" classifier osName)
+    .map(m => "org.openjfx" % s"javafx-$m" % "17.0.1" classifier osName)
 }
