@@ -18,14 +18,6 @@ mainClass := Some("hello.ScalaFXHelloWorld")
 fork := true
 
 // Add JavaFX dependencies
-libraryDependencies ++= {
-  // Determine OS version of JavaFX binaries
-  lazy val osName = System.getProperty("os.name") match {
-    case n if n.startsWith("Linux") => "linux"
-    case n if n.startsWith("Mac") => "mac"
-    case n if n.startsWith("Windows") => "win"
-    case _ => throw new Exception("Unknown platform!")
-  }
+libraryDependencies ++=
   Seq("base", "controls", "fxml", "graphics", "media", "swing", "web")
-    .map(m => "org.openjfx" % s"javafx-$m" % "18.0.1" classifier osName)
-}
+    .map(m => "org.openjfx" % s"javafx-$m" % "18.0.1")
