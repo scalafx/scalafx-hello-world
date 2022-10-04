@@ -2,13 +2,13 @@
 name := "ScalaFX Hello World"
 
 // Project version
-version := "18.0.1-R28"
+version := "19.0.0-R30"
 
 // Version of Scala used by the project
 scalaVersion := "3.1.3"
 
 // Add dependency on ScalaFX library
-libraryDependencies += "org.scalafx" %% "scalafx" % "18.0.1-R28"
+libraryDependencies += "org.scalafx" %% "scalafx" % "19.0.0-R30"
 
 scalacOptions ++= Seq("-unchecked", "-deprecation", "-encoding", "utf8", "-feature")
 
