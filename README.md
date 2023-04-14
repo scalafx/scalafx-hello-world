@@ -39,3 +39,8 @@ Additional Information
 Detailed description of similar example can be found in the blog post
 ["Getting Started with ScalaFX: Compile and Run"](http://codingonthestaircase.wordpress.com/2013/05/17/getting-started-with-scalafx-compile-and-run-2/)
 .
+
+Gradle Version
+-----------
+
+[Gradle](https://gradle.org/) version of this example can be found in [ScalaFX-Hello-World-Gradle](https://github.com/scalafx/ScalaFX-Hello-World-Gradle)
