@@ -6,8 +6,10 @@ Simple example of a ScalaFX application using [Simple-Build-Tool](http://www.sca
 Branches
 --------
 
-Branch [master](https://github.com/scalafx/scalafx-hello-world/tree/master) contain example with Scala 2 syntax,
-branch [Scala3](https://github.com/scalafx/scalafx-hello-world/tree/Scala3) with Scala 3 syntax.
+Branch [master](https://github.com/scalafx/scalafx-hello-world/tree/master) contains an example with the current Scala 3
+syntax,
+branch [Scala2](https://github.com/scalafx/scalafx-hello-world/tree/Scala2) contains the same example with the old Scala
+2 syntax.
 
 
 Content
@@ -21,7 +23,8 @@ Content
 How to build and Run
 --------------------
 
-1. Install [Java 11 JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) or newer. This project should also work with Java 10. If you are want to use Java 8 look at the [SFX-8](https://github.com/scalafx/scalafx-hello-world/tree/SFX-8) branch of this project.
+1. Install [Java 17 JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) or newer. 
+   If you are want to use Java 8 look at the [SFX-8](https://github.com/scalafx/scalafx-hello-world/tree/SFX-8) branch of this project.
 
 2. Install [SBT](http://www.scala-sbt.org/)
 
@@ -43,4 +46,5 @@ Detailed description of similar example can be found in the blog post
 Gradle Version
 -----------
 
-[Gradle](https://gradle.org/) version of this example can be found in [ScalaFX-Hello-World-Gradle](https://github.com/scalafx/ScalaFX-Hello-World-Gradle)
+[Gradle](https://gradle.org/) version of this example can be found
+in [ScalaFX-Hello-World-Gradle](https://github.com/scalafx/ScalaFX-Hello-World-Gradle)
