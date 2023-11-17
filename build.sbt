@@ -5,7 +5,7 @@ name := "ScalaFX Hello World"
 version := "20.0.0-R31"
 
 // Version of Scala used by the project
-scalaVersion := "3.2.2"
+scalaVersion := "3.3.1"
 
 // Add dependency on ScalaFX library
 libraryDependencies += "org.scalafx" %% "scalafx" % "20.0.0-R31"
